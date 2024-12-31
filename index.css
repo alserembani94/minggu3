@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form > div,
+form > fieldset {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+fieldset {
+  border: 0;
+}
+
+form > div > label {
+  width: 10ch;
+}

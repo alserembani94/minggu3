@@ -7,6 +7,36 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
+  <form method="get" action="submit.html">
+    <div>
+      <label for="nama">Nama: </label>
+      <input type="text" id="nama" name="nama">
+    </div>
+    <div>
+      <label for="umur">Umur: </label>
+      <input type="number" id="umur" name="umur">
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password">
+    </div>
+    <div>
+      <label for="dah-makan">Dah makan: </label>
+      <input type="checkbox" id="dah-makan" name="dah-makan" value="true">
+    </div>
+    <fieldset>
+      <p>Pakai OS apa?</p>
+      <div>
+        <input type="radio" id="os-windows" name="os" value="windows">
+        <label for="os-windows">Windows</label>
+      </div>
+      <div>
+        <input type="radio" id="os-mac" name="os" value="mac">
+        <label for="os-mac">Mac</label>
+      </div>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
