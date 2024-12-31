@@ -1,11 +1,15 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 16px;
+  background-color: #d9d9d9;
 }
 
 form > div,
@@ -13,6 +17,7 @@ form > fieldset {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  align-items: center;
 }
 
 fieldset {
@@ -21,4 +26,23 @@ fieldset {
 
 form > div > label {
   width: 10ch;
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #666666;
+}
+
+form button {
+  width: fit-content;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #aaaaaa;
+  border-radius: 8px;
+  cursor: pointer;
 }
